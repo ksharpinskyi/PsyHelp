@@ -1,0 +1,15 @@
+Package: PsyHelp
+Type: Package
+Title: Helps Create Demographic Information Graphs easily
+Version: 0.1.0
+Author: Konstantyn Sharpinskyi
+Maintainer: Konstantyn Sharpinskyi <sharpinsk@gmail.com>
+Description: This package provides a demographic function.
+    It only works if your demographic variables are called a certain way.
+License: GPL-2
+Encoding: UTF-8
+LazyData: false
+Imports: 
+    ggplot2, gridExtra, ggthemes, ggpubr
+Suggests:
+    knitr
