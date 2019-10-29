@@ -4,11 +4,36 @@
 # PsyHelp
 
 PsyHelp helps you to easily visualize demographic information for your
-survey: <https://app.box.com/s/h72rmmnt76k1ht7j043weq24cho60bt6>.
+survey.
 
 For the main function to work you need to use the following qualtrics
-block in your survey: . Alternatively, you can create your own survey
-with the following variables labelled as indicated below in your study:
+block in your survey:
+<https://app.box.com/s/h72rmmnt76k1ht7j043weq24cho60bt6>. Alternatively,
+you can create your own survey with the following variables labelled as
+indicated in the variable structure section below.
+
+## Installation
+
+You can install the latest version of PsyHelp from Github:
+
+``` r
+
+devtools::install_github("ksharpinskyi/PsyHelp")
+```
+
+## Example
+
+To create a collection of demograpic graphs for your dataset use the
+following code:
+
+``` r
+
+library(PsyHelp)
+
+demo.graphs(yourdataframename)
+```
+
+## Variable Structure
 
 1.  Age (must be numeric, 15 - 100)
 2.  Sex
@@ -62,24 +87,3 @@ with the following variables labelled as indicated below in your study:
       - 6 - 75001 - 100000
       - 7 - 100001 - 150000
       - 8 - 150000 +
-
-## Installation
-
-You can install the latest version of PsyHelp from Github:
-
-``` r
-
-devtools::install_github("ksharpinskyi/PsyHelp")
-```
-
-## Example
-
-To create a collection of demograpic graphs for your dataset use the
-following code:
-
-``` r
-
-library(PsyHelp)
-
-demo.graphs(yourdataset)
-```
