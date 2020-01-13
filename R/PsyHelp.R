@@ -158,7 +158,7 @@ demo.graphs <- function(dataset){
 
   # Combine into 1 graph
 
-  combined <- grid.arrange(
+  combined <- marrangeGrob(
     grobs = list(educ, income,age, gender, ethnicity,  political, resid, religion),
     widths = c(2, 1, 1),
     heights = c(2, 2, 1.5, 1.5, 2, 2),
