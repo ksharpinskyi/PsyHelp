@@ -135,7 +135,7 @@ demo.graphs <- function(dataset){
 
   # Religion
 
-  religion.count <- data.frame(table(demo.test$Religion))
+  religion.count <- data.frame(table(dataset$Religion))
   religion.count$Prop <- round(religion.count$Freq / sum(religion.count$Freq), 3) * 100
 
   religion.count <- religion.count[order(religion.count$Var1, decreasing = T) , ]
@@ -174,4 +174,3 @@ demo.graphs <- function(dataset){
   return(combined)
 
 }
-
